@@ -1,1 +1,53 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ceres Assets</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      overflow: hidden;
+    }
+    h1 {
+      color: #0B3D91; /* Space blue */
+      font-size: 5vw; /* Scales to 5% of window width, ~50px on a 1000px screen */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+    }
+    img {
+      position: absolute;
+      top: 70.71px; /* 100px diagonal = 100/√2 ≈ 70.71px top */
+      left: 70.71px; /* 100px diagonal = 100/√2 ≈ 70.71px left */
+      width: 100px;
+      height: auto;
+    }
+    a.contact {
+      position: absolute;
+      left: 70.71px; /* Aligned with image */
+      top: 120.71px; /* Below image, assuming ~100px image height, centered vertically relative to image */
+      color: #0B3D91; /* Space blue */
+      font-family: Arial, sans-serif;
+      font-size: 16px; /* Fixed size for readability */
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      width: 100px; /* Matches image width for alignment */
+    }
+    a.contact:hover {
+      text-decoration: underline; /* Hover effect */
+    }
+  </style>
+</head>
+<body>
+  <h1>Ceres Assets</h1>
+  <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Ceres Assets Image">
+  <a href="mailto:blair.yates@ceresllc.us" class="contact">Contact</a>
+</body>
+</html>
